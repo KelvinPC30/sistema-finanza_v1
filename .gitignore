@@ -1,0 +1,29 @@
+# Dependencies
+Sistema/frontend/node_modules/
+Sistema/backend/vendor/
+
+# Environment
+Sistema/backend/.env
+Sistema/frontend/.env*
+
+# Logs
+Sistema/backend/storage/logs/
+Sistema/backend/bootstrap/cache/*.php
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+Sistema/frontend/dist/
+Sistema/frontend/build/
+
+# Laravel optional
+Sistema/backend/storage/app/public/
+Sistema/backend/storage/app/private/
