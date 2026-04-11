@@ -1,0 +1,49 @@
+version: "1"
+
+pull_requests:
+  enabled: true
+
+review_status:
+  enabled: true
+
+打分:
+  enabled: true
+
+auto_review:
+  enabled: true
+  auto_title_prefix: "🤖"
+  inline_comments: true
+
+chat:
+  enabled: false
+
+code_review:
+  profile: "auto"
+  high_level_summary: true
+  auto_titlePlaceholder: "🤖 CodeRabbit Review"
+  reviewstatus: true
+  collapse_walkthrough: false
+  sequenceDiagram: true
+
+configuration:
+  override:
+    - name: "Laravel / PHP"
+      labels: ["php", "laravel", "backend"]
+    - name: "React / Frontend"
+      labels: ["react", "frontend", "javascript"]
+
+notifications:
+  comment:
+    reply_threshold: 0
+    from_last_review_opened: true
+  review_status:
+    attachment_threshold: 10
+    name: "Review Status"
+
+languages:
+  - name: "PHP"
+    extensions: [".php"]
+  - name: "JavaScript"
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
+  - name: "CSS"
+    extensions: [".css", ".scss", ".sass"]
